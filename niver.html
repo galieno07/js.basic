@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -44,4 +45,52 @@
         }
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Dias para Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quantos dias faltam para o seu aniversário?</h1>
+        <label for="dataAniversario">Digite a data do seu aniversário (DD/MM):</label>
+        <input type="text" id="dataAniversario" placeholder="Ex: 25/12">
+        <button onclick="calcularDias()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function calcularDias() {
+            const dataAniversario = document.getElementById('dataAniversario').value;
+            const resultado = document.getElementById('resultado');
+
+            if (!dataAniversario) {
+                resultado.textContent = 'Por favor, insira uma data válida.';
+                return;
+            }
+
+            const hoje = new Date();
+            const [diaAniversario, mesAniversario] = dataAniversario.split('/');
+
+            // Cria uma data para o próximo aniversário
+            let proximoAniversario = new Date(hoje.getFullYear(), mesAniversario - 1, diaAniversario);
+
+            // Se o aniversário já passou neste ano, define o próximo aniversário para o ano seguinte
+            if (hoje > proximoAniversario) {
+                proximoAniversario.setFullYear(hoje.getFullYear() + 1);
+            }
+
+            // Calcula a diferença em milissegundos e converte para dias
+            const umDiaEmMilissegundos = 24 * 60 * 60 * 1000;
+            const diasRestantes = Math.ceil((proximoAniversario - hoje) / umDiaEmMilissegundos);
+
+            resultado.textContent = `Faltam ${diasRestantes} dias para o seu próximo aniversário!`;
+        }
+    </script>
+</body>
+>>>>>>> e135b07835c5194aca16f36df7bd5b27e0c99b46
 </html>
