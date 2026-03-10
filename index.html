@@ -1,0 +1,16 @@
+<h1 id="titulo">Ola, mundo!</h1>
+<button id="botao">mudar texto</button>
+
+<script>
+  const titulo = document.getElementById("titulo");
+  const botao = document.getElementById("botao");
+
+  botao.addEventListener("click", () => {
+    titulo.innerText = "Bem vindo";
+  });
+  botao.addEventListener("mouseover", () => {
+    titulo.innerText = "chovendo";
+  });
+
+
+</script>

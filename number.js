@@ -1,0 +1,33 @@
+// outro tipo de dado e o number,
+
+let x= 8
+let y = 9
+
+let resultado = x + y 
+console.log(resultado)
+
+
+let a = "8"
+let b = "9"
+
+let outroresultado = a + b
+
+console.log(outroresultado)
+
+console.log(typeof(resultado))
+console.log(typeof(outroresultado))
+
+a = parseInt (a)
+b = parseInt (b)
+ novoResultado= a + b
+console.log(novoResultado)
+console.log(typeof(novoResultado))
+
+console.log(a + b)
+console.log(b - a)
+console.log(a * b)
+console.log(b / a)
+console.log(b % a)
+console.log(a ** b)
+
+console.log( parseInt(a / b))
