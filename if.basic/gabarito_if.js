@@ -138,3 +138,41 @@ if (salarioBruto <= 2000) {
 salarioLiquido = salarioBruto - imposto;
 console.log(`Imposto descontado: R$${imposto}`);
 console.log(`Salário líquido: R$${salarioLiquido}`);
+
+const prompt = require('prompt-sync')()
+
+console.log("\n*** MENU DE OPÇÕES ***")
+console.log("*** ESCOLHA A OPÇAO DESEJADA ***\n")
+
+console.log("1 - CADASTRAR PRODUTO")
+console.log("2 - ALTERAR PRODUTO")
+console.log("3 - DELETAR PRODUTO")
+console.log("4 - CADASTRAR CLIENTE")
+
+let opcaousuario = prompt("Digite o numero da opcao e tecle ENTER: ")
+
+
+if(opcaousuario == '1') {
+    console.log("** CADASTRO DE PRODUTO **")
+    produto = prompt("Produto: ")
+    console.log("** CADASTRO DE PRODUTO FINALIZADO**")
+}
+
+if(opcaousuario == '2') {
+    console.log("** ALTERAR PRODUTO **")
+    //aqui vai o CODIGO que cadastra produto
+    console.log("** PRODUTO ALTERADO**")
+}
+
+if(opcaousuario == '3') {
+    console.log("** APAGAR PRODUTO **")
+    //aqui vai o CODIGO que apaga o produto
+    console.log("** PRODUTO APAGADO **")
+}
+
+if(opcaousuario == '4') {
+    console.log("** CADASTRO DE USUARIO **")
+    usuario = prompt("Nome: ")
+    idade = prompt("Idade: ")
+    console.log("** CADASTRO DE USUARIO FINALIZADO**")
+}

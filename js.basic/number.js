@@ -29,8 +29,6 @@ console.log(a * b)
 console.log(b / a)
 console.log(b % a)
 console.log(a ** b)
-
-=======
 // outro tipo de dado e o number,
 
 let x= 8
@@ -63,5 +61,4 @@ console.log(b / a)
 console.log(b % a)
 console.log(a ** b)
 
->>>>>>> e135b07835c5194aca16f36df7bd5b27e0c99b46
 console.log( parseInt(a / b))
