@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="desafio.css">
+    
+</head>
+<body>
+    
+   <h2>Digite a senha:</h2>
+
+  <!-- Campo password (mostra bolinhas) -->
+  <input type="password" id="senha" placeholder="Digite a senha">
+
+  <!-- Botão -->
+  <button onclick="verificarSenha()">Verificar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function verificarSenha() {
+      let senhaDigitada = document.getElementById("senha").value;
+      let senhaCorreta = "1234";
+
+      if (senhaDigitada === senhaCorreta) {
+        document.getElementById("resultado").textContent = "Senha correta!";
+      } else {
+        document.getElementById("resultado").textContent = "Senha incorreta!";
+      }
+    }
+  </script>
+
+    
+</body>
+</html>

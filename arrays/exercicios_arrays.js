@@ -1,13 +1,13 @@
 //2- Um zoológico precisa organizar a lista de seus animais. Atualmente, a lista animais contém: "Gato", "Cachorro", "Pássaro". O zoológico adquiriu um novo animal, um elefante, e ele deve ser adicionado ao final da lista. Além disso, o zoológico decidiu transferir o gato para outro local, então ele deve ser removido da lista. Exiba a lista atualizada
- //array_animais = ['gato', 'cachorro', 'passaro']
+ array_animais = ['gato', 'cachorro', 'passaro']
 
-// console.log("zooologico"= array_animais)
+ console.log("zooologico"= array_animais)
 
-//array_animais.push('elefante')
-//console.log("novo"= array_animais)
+array_animais.push('elefante')
+console.log("novo"= array_animais)
 
-//array_animais.shift()
-//console.log("novo"= array_animais)//
+array_animais.shift()
+console.log("novo"= array_animais)//
 
 
 //3- Durante um levantamento internacional, foi criada uma lista de países chamada paises, que contém: "Brasil", "Argentina", "Chile", "Uruguai". Sua tarefa é contar quantos países estão listados e exibir essa informação.

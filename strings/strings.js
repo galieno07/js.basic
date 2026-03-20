@@ -23,7 +23,7 @@ console.log(nome[10])
 
 let saudacao = "Olá, Mundo!";
 console.log(saudacao.toUpperCase()); // "OLÁ, MUNDO!"
-/* console.log(saudacao.toLowerCase()); // "olá, mundo!" 
+ console.log(saudacao.toLowerCase()); // "olá, mundo!" 
 
 console.log(saudacao)
 

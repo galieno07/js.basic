@@ -50,16 +50,23 @@ const prompt = require('prompt-sync')
 console.log("mercadinho")
 console.log("prateleira")
 
-frutaescolhida =prompt("digite a fruta")
+//frutaescolhida =prompt("digite a fruta")
 
-indece  = frutas.indexOf(frutaescolhida)
+//indece  = frutas.indexOf(frutaescolhida)
 
-if(indece == -1){
-    console.log("fruta n encontrada")
+//if(indece == -1){
+  //  console.log("fruta n encontrada")
+//
+//}
+    //else{
+     //   console.log(`a fruta ${frutaescolhida} esta na prateleira:`)
+  //  }
 
-}
-    else{
-        console.log(`a fruta ${frutaescolhida} esta na prateleira:`)
-    }
 
+// FOR EACH
+console.log("Usando for each")
+
+frutas.forEach(fruta => {
+    console.log("fruta: " + fruta)
+});
 
